@@ -97,12 +97,6 @@ nav {
   background-color: #eef1f4;
 }
 
-.flex {
-  flex-direction: row;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
 .card {
   background-color: #ffffff;
   padding: 30px;
@@ -116,39 +110,79 @@ nav {
 .card h3 {
   font-size: 20px;
   font-weight: 600;
+  align-items: center;
 }
 
 .card p {
   color: #555;
+  align-items: center;
+
+}
+.projects-flex {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.skills-grid {
-  background-color: #ffffff;
+.project-card {
+  flex: 1 1 280px;
+  background: linear-gradient(135deg, #ffffff, #f1f4f8);
   padding: 30px;
- margin: 30px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  background: linear-gradient(135deg, #e3e8ef, #ffffff);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+
+.skills-grid {
   display: grid;
-  gap: 10px;
-  border-radius: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
 }
 
 .skills-card {
   background-color: #cfd2d4;
-  border-radius: 5px;
-  box-shadow: 0 1px 4px rgba(14, 14, 14, 0.1);
+  padding: 12px;
+  text-align: center;
+  border-radius: 8px;
   transition: transform 0.2s;
-  padding: 5px 10px;
-  align-items: center;
+}
+
+.skills-card:hover {
+  transform: scale(1.05);
 }
 
 .footer {
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ffffff;
-  color: #777;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: auto;
-
- 
+  border-radius: 15px;
+  width: 100%;
+  text-align: center;
+  height: 15vh;
 }
+
+.social-links {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+  margin-bottom: 90px;
+}
+.social-links img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.6;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+footer h2 {
+  padding: 10px;
+}
+footer p {
+  padding-top: 25px;
+}
+
