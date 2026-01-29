@@ -3,12 +3,15 @@
 <head>
 
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="media.css">
+
 
 
 </head>
@@ -18,22 +21,23 @@
     <div class="nav-container">
       <div class="logo">AD</div>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <header class="header">
+  <header class="header" id="home">
     <div class="header-content">
       <h1>Aya Dzhaparbekova</h1>
       <p>Software Engineer</p>
     </div>
   </header>
 
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
       <h2>About Me</h2>
       <p>Software engineer with experience in JavaScript, React, Node.js. Responsive design, DOM and API integration.
@@ -41,41 +45,58 @@
     </div>
   </section>
 
-  <section class="id=flex">
-    <div class="container ">
-      <div class="card">
-        <h3>Project One</h3>
-
-        <p>My Portfolio Project</p>
-      
-      </div>
-      <div class="card">
-        <h3>Project Two</h3>
-        <p>Marvel API</p>
-      </div>
-      <div class="card">
-        <h3>Project Three</h3>
-        <p>Travel Planner React</p>
-      </div>
+  <section class="projects" id="projects">
+  <div class="container flex projects-flex">
+    <div class="project-card">
+      <h3></h3>
+      <p>My Portfolio Project</p>
     </div>
-  </section>
 
-
-  <section class="id=skills">
-    <div class="container-skills ">
-      <div class="skills-grid">
-        <div class="skills-card">HTML</div>
-         <div class="skills-card">CSS</div>
-          <div class="skills-card">JavaScript</div>
-           <div class="skills-card">Flexbox</div>
-            <div class="skills-card">Grid</div>
+    <div class="project-card">
+      <h3></h3>
+      <p>Marvel API</p>
     </div>
-  </section>
 
+    <div class="project-card">
+      <h3></h3>
+      <p>Travel Planner React</p>
+    </div>
+    <div class="project-card">
+      <h3></h3>
+      <p> Full Stack Travel Planner</p>
+    </div>
+  </div>
+   
+  </div>
+</section>
+  <section class="skills" id="skills">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skills-card">React</div>
+      <div class="skills-card">Node.js</div>
+      <div class="skills-card">JavaScript</div>
+      <div class="skills-card">TypeScript</div>
+      <div class="skills-card">HTML/CSS</div>
+      <div class="skills-card">API</div>
 
-  <footer class="footer">
-    <p>© 2026 Aya Dzhaparbekova</p>
-  </footer>
+    </div>
+  </div>
+</section>
+<footer class="footer" id="contact">
+  <p>© 2026 Aya Dzhaparbekova</p>
 
-</body>
-</html>
+  <div class="social-links">
+    <a href="https://github.com/AyaDzhaparbekova" target="blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub">
+    </a>
+
+    <a href="https://www.linkedin.com/in/aya-dzhaparbekova-27b5902a1/" target="blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
+    </a>
+
+    <a href="https://mail.google.com/mail/u/0/#inbox">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Gmail">
+    </a>
+  </div>
+</footer>
