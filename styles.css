@@ -184,5 +184,10 @@ footer h2 {
 }
 footer p {
   padding-top: 25px;
+  font-size: 15px;
+}
+footer a {
+  text-decoration: none;
+
 }
 
