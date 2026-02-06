@@ -159,6 +159,8 @@ nav {
   transform: scale(1.05);
 }
 
+
+
 .footer {
   border-radius: 15px;
   width: 100%;
@@ -185,9 +187,11 @@ footer h2 {
 footer p {
   padding-top: 25px;
   font-size: 15px;
+  margin-bottom: 15px;
 }
 footer a {
   text-decoration: none;
 
 }
+
 
